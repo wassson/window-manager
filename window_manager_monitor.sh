@@ -2,11 +2,9 @@
 osascript -e '
 tell application "Warp" to activate
 
-tell application "System Events" to click UI element "Warp" of list 1 of application process "Dock"
-
-tell application "System Events" to keystroke " " using command down
-
 tell application "System Events"
+    click UI element "Warp" of list 1 of application process "Dock"
+    keystroke " " using command down
     delay .1
     keystroke "first third"
     delay .1
@@ -17,11 +15,9 @@ delay .1
 
 tell application "Visual Studio Code" to activate
 
-tell application "System Events" to click UI element "Visual Studio Code" of list 1 of application process "Dock"
-
-tell application "System Events" to keystroke " " using command down
-
 tell application "System Events"
+    click UI element "Visual Studio Code" of list 1 of application process "Dock"
+    keystroke " " using command down
     delay .1
     keystroke "last two thirds"
     delay .1
