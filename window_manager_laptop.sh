@@ -5,7 +5,7 @@ tell application "Visual Studio Code" to activate
 
 tell application "System Events"
     tell process "Visual Studio Code"
-        delay 1
+        delay .1
         keystroke (ASCII character 29) using {control down, shift down}
     end tell
 end tell
